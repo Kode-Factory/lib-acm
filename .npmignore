@@ -1,0 +1,31 @@
+# Source files
+src/
+test/
+
+# Configuration files
+tsconfig.json
+tsconfig.test.json
+tsup.config.ts
+jest.config.js
+.gitignore
+.npmignore
+
+# Development files
+coverage/
+*.log
+yarn-error.log
+yarn-debug.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
