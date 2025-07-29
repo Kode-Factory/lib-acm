@@ -14,12 +14,15 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Ruan",
   "license": "MIT",
   "description": "Kode Factory's Alerty Core Messaging",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kodefactory/acm.git"
+    "url": "git+https://github.com/kodefactory/lib-acm.git"
   },
   "keywords": [
     "alerty",
