@@ -29,8 +29,7 @@ export async function sendMessageToNumber(number: string, message: string) {
   // Validate the number first
   validateNumber(number);
   
-  try {
-    const response = await axios.post(
+    await axios.post(
       'https://mw.alerty.com.br/rest/instance/sendMessage',
       {
         to: {
@@ -46,11 +45,7 @@ export async function sendMessageToNumber(number: string, message: string) {
         }
       }
     );
-    
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+    return Promise.resolve();
 }
 
 export { InvalidApiKeyError, InvalidNumberError };

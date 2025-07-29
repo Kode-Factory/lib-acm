@@ -89,7 +89,7 @@ describe('ACM Module', () => {
         }
       );
       
-      expect(result).toEqual(mockResponse.data);
+      expect(result).toBeUndefined();
     });
 
     it('should throw error when API call fails', async () => {
